@@ -1,4 +1,5 @@
 "use client";
+//comment//
 import {usePathname} from "next/navigation";
 export default function PickedImage() {
     const pathname = usePathname();
