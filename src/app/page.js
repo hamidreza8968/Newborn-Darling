@@ -1,6 +1,7 @@
 'use client';
 import {useRouter} from "next/navigation";
 import Counter from "../components/counter/Counter";
+import Button from "../components/button/Button";
 
 export default function Home() {
     const rout = useRouter();
@@ -13,7 +14,7 @@ export default function Home() {
                 <h1 className="font-bold text-6xl">Newborn Darling Coming Soon</h1>
             </div>
             <Counter deadlineDate={new Date('2025-01-25T12:00:00')}/>
-            <button className="p-4 bg-red-300 rounded" onClick={handleGoGallery}>Galley</button>
+            <Button handleClick={handleGoGallery} color="red-300">Go To Galley</Button>
         </main>
     );
 }
